@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* Importando fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Definição de cores no tema escuro */
+:root {
+  --primary-bg: #121212;   /* Fundo principal */
+  --secondary-bg: #1E1E1E; /* Fundo dos botões */
+  --btn-bg: #292929;       /* Fundo dos botões secundários */
+  --btn-eq-bg: #007ACC;    /* Cor do botão de igual */
+  --btn-hover: #333333;    /* Efeito de hover */
+  --text-color: #E0E0E0;   /* Cor do texto */
+  --shadow-color: rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container principal */
+.container {
+  max-width: 400px;
+  width: 100%;
+  background-color: var(--secondary-bg);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  text-align: center;
+}
+
+/* Título da calculadora */
+.calc {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--btn-eq-bg);
+  margin-bottom: 10px;
+}
+
+/* Estilização da tabela (calculadora) */
+.calculadora {
+  width: 100%;
+}
+
+/* Campo de exibição */
+.display {
+  width: 100%;
+  height: 60px;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  box-shadow: inset 0 0 10px var(--shadow-color);
+  outline: none;
+}
+
+/* Estilização dos botões */
+.btn {
+  width: 100%;
+  height: 55px;
+  font-size: 1.2em;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: var(--btn-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse nos botões */
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Botão de resultado (=) com cor destacada */
+.btn-eq {
+  background-color: var(--btn-eq-bg);
+}
+
+.btn-eq:hover {
+  background-color: #005b99;
+}
+
+/* Botão de limpar (C) com cor avermelhada */
+.btn-clear {
+  background-color: #b30000;
+}
+
+.btn-clear:hover {
+  background-color: #8b0000;
+}
+
+/* Responsividade: Ajustes para telas menores */
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .btn {
+    height: 50px;
+    font-size: 1em;
+  }
+}
