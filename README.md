@@ -15,7 +15,7 @@ Divisão
 A interface foi construída com HTML5 e CSS3, enquanto toda a lógica das operações foi desenvolvida utilizando JavaScript puro (Vanilla JS).
 
 Você pode visualizar o projeto publicado através do GitHub Pages neste link:  
-👉 [Acessar o Projeto Academia](https://marrafon91.github.io/projeto-calculadora/)
+👉 [Acessar o Projeto Calculadora](https://marrafon91.github.io/projeto-calculadora/)
 
 🚀 Tecnologias Utilizadas
 HTML5
